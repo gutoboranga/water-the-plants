@@ -1,0 +1,19 @@
+name: WaterThePlants
+options:
+  bundleIdPrefix: com.watertheplants
+  deploymentTarget:
+    iOS: 14.0
+targets:
+  WaterThePlants:
+    type: application
+    platform: iOS
+    sources: 
+      - path: WaterThePlants
+    scheme:
+      testTargets:
+      - WaterThePlantsTests
+  WaterThePlantsTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: WaterThePlantsTests
